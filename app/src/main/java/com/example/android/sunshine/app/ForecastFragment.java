@@ -56,6 +56,9 @@ public class ForecastFragment extends Fragment {
         return super.onOptionsItemSelected(item);
     }
 
+    private void openPreferredLocationInMap() {
+    }
+
     @Override
     public void onStart() {
         super.onStart();

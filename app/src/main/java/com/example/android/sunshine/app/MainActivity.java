@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.v(TAG, "in onCreate)");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
@@ -24,6 +25,39 @@ public class MainActivity extends AppCompatActivity {
                     .add(R.id.container, new ForecastFragment())
                     .commit();
         }
+    }
+
+    @Override
+    protected void onStart() {
+        Log.v(TAG, "in onStart");
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.v(TAG, "in onResume");
+        super.onResume();
+        // The activity has become visible (it is now "resumed").
+    }
+
+    @Override
+    protected void onPause() {
+        Log.v(TAG, "in onPause");
+        super.onPause();
+        // Another activity is taking focus (this activity is about to be "paused").
+    }
+
+    @Override
+    protected void onStop() {
+        Log.v(TAG, "in onStop");
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.v(TAG, "in onDestroy");
+        super.onDestroy();
+        // The activity is about to be destroyed.
     }
 
     @Override
