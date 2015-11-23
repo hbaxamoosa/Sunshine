@@ -41,7 +41,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/abc_list_item_padding_horizontal_material"
             android:layout_marginStart="@dimen/abc_list_item_padding_horizontal_material">
-
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
