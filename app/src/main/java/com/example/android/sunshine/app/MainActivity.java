@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements ForecastFragment.
      * Substitute you own project number here. This project number comes
      * from the Google Developers Console.
      */
-    static final String PROJECT_NUMBER = "Your Project Number";
+    static final String PROJECT_NUMBER = "256715017871"; // TODO: Update value before launching app or before pushing code to GitHub
     private static final String DETAILFRAGMENT_TAG = "DFTAG";
     private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     private static final String PROPERTY_APP_VERSION = "appVersion";
